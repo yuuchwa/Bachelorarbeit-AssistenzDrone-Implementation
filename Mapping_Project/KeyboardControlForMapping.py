@@ -1,5 +1,4 @@
 from djitellopy import tello
-from time import sleep
 import pygame
 
 LEFT_KEY = "LEFT"
@@ -22,6 +21,7 @@ def initKeyboardControl():
 def getKeyboardInput(me: tello):
     left_right, forward_backward, up_down, yield_velocity = 0, 0, 0, 0
     speed = 50
+    distance = 0
 
     if getKey(LEFT_KEY):
         left_right = -speed

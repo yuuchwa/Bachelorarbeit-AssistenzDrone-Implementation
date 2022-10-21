@@ -12,7 +12,6 @@ def init():
     KeyboardControl.initKeyboardControl()
 
     me.streamon()
-    print("hier")
 
 
 if __name__ == '__main__':
